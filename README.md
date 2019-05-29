@@ -2,6 +2,7 @@ Stafford University’s Registration System is developed by C# along with Visual
 This system contains more important functions which are mentioned above scenario. 
 Each functions implement more efficient activities like registration, updating information and etc.
 Now let’s consider each information regarding this system as shown below.
+
 •	Student can register for courses 
 
 •	Professors can select courses to teach. 
