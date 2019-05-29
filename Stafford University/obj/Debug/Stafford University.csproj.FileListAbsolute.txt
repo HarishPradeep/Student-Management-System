@@ -1,0 +1,24 @@
+c:\users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\bin\Debug\Stafford University.exe.config
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\bin\Debug\Stafford University.exe
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\bin\Debug\Stafford University.pdb
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford University.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.Properties.Resources.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford University.csproj.GenerateResource.Cache
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford University.exe
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford University.pdb
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.Home.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.LecturePanel.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.student.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.course.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.login.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.assignCourse.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.index.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.catlog.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.assignStudents.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.interfaceforlecture.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.roster.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.helpscreen.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.help1.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.help2.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.help3.resources
+C:\Users\user\documents\visual studio 2015\Projects\Stafford University\Stafford University\obj\Debug\Stafford_University.prof_login.resources

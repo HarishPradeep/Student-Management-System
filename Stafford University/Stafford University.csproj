@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE7CCDCA-C50B-4B14-A558-5AFB04D0B897}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Stafford_University</RootNamespace>
+    <AssemblyName>Stafford University</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="assignCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assignCourse.Designer.cs">
+      <DependentUpon>assignCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assignStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assignStudents.Designer.cs">
+      <DependentUpon>assignStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="catlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catlog.Designer.cs">
+      <DependentUpon>catlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\assignCouPro.cs" />
+    <Compile Include="classes\assignstd.cs" />
+    <Compile Include="classes\insertCou.cs" />
+    <Compile Include="classes\insertLib.cs" />
+    <Compile Include="classes\insertST.cs" />
+    <Compile Include="course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="course.Designer.cs">
+      <DependentUpon>course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help1.Designer.cs">
+      <DependentUpon>help1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help2.Designer.cs">
+      <DependentUpon>help2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help3.Designer.cs">
+      <DependentUpon>help3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpscreen.Designer.cs">
+      <DependentUpon>helpscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaceforlecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfaceforlecture.Designer.cs">
+      <DependentUpon>interfaceforlecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturePanel.Designer.cs">
+      <DependentUpon>LecturePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prof_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prof_login.Designer.cs">
+      <DependentUpon>prof_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roster.Designer.cs">
+      <DependentUpon>roster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffordUniversityDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffordUniversityDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student.Designer.cs">
+      <DependentUpon>student.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="assignCourse.resx">
+      <DependentUpon>assignCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assignStudents.resx">
+      <DependentUpon>assignStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catlog.resx">
+      <DependentUpon>catlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="course.resx">
+      <DependentUpon>course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help1.resx">
+      <DependentUpon>help1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help2.resx">
+      <DependentUpon>help2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help3.resx">
+      <DependentUpon>help3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpscreen.resx">
+      <DependentUpon>helpscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaceforlecture.resx">
+      <DependentUpon>interfaceforlecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturePanel.resx">
+      <DependentUpon>LecturePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prof_login.resx">
+      <DependentUpon>prof_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="roster.resx">
+      <DependentUpon>roster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StaffordUniversityDataSet.xsc">
+      <DependentUpon>StaffordUniversityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet.xss">
+      <DependentUpon>StaffordUniversityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet1.xsc">
+      <DependentUpon>StaffordUniversityDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet1.xss">
+      <DependentUpon>StaffordUniversityDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet10.xsc">
+      <DependentUpon>StaffordUniversityDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet10.xss">
+      <DependentUpon>StaffordUniversityDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet11.xsc">
+      <DependentUpon>StaffordUniversityDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet11.xss">
+      <DependentUpon>StaffordUniversityDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet12.xsc">
+      <DependentUpon>StaffordUniversityDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet12.xss">
+      <DependentUpon>StaffordUniversityDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet13.xsc">
+      <DependentUpon>StaffordUniversityDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet13.xss">
+      <DependentUpon>StaffordUniversityDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet14.xsc">
+      <DependentUpon>StaffordUniversityDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet14.xss">
+      <DependentUpon>StaffordUniversityDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet15.xsc">
+      <DependentUpon>StaffordUniversityDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet15.xss">
+      <DependentUpon>StaffordUniversityDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet16.xsc">
+      <DependentUpon>StaffordUniversityDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet16.xss">
+      <DependentUpon>StaffordUniversityDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet2.xsc">
+      <DependentUpon>StaffordUniversityDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet2.xss">
+      <DependentUpon>StaffordUniversityDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet3.xsc">
+      <DependentUpon>StaffordUniversityDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet3.xss">
+      <DependentUpon>StaffordUniversityDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet4.xsc">
+      <DependentUpon>StaffordUniversityDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet4.xss">
+      <DependentUpon>StaffordUniversityDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet5.xsc">
+      <DependentUpon>StaffordUniversityDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet5.xss">
+      <DependentUpon>StaffordUniversityDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet6.xsc">
+      <DependentUpon>StaffordUniversityDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet6.xss">
+      <DependentUpon>StaffordUniversityDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet7.xsc">
+      <DependentUpon>StaffordUniversityDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet7.xss">
+      <DependentUpon>StaffordUniversityDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet8.xsc">
+      <DependentUpon>StaffordUniversityDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet8.xss">
+      <DependentUpon>StaffordUniversityDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet9.xsc">
+      <DependentUpon>StaffordUniversityDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="StaffordUniversityDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffordUniversityDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffordUniversityDataSet9.xss">
+      <DependentUpon>StaffordUniversityDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
